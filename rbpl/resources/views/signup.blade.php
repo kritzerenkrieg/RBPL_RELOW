@@ -15,7 +15,7 @@
   <body>
     <div class="sign-up-user">
       <div class="container-1 d-flex flex-column px-3 gap-3">
-        <a href="/" class="button-w-icon d-flex">
+        <a href="{{url ('/signin')}}" class="button-w-icon d-flex">
           <span class="material-symbols-outlined" type="button">arrow_back_ios</span>
           <p class="button-text" type="button">Kembali</p>
         </a>
@@ -49,7 +49,7 @@
               <button class="button-wo-icon" type="button">Sign Up</button>
               <div class="info-text d-flex justify-content-center">
                 <p class="info-text-1 text-center">Sudah punya akun?</p>
-                <p class="info-text-2 text-center" type="button">Masuk di sini</p>
+                <a href="{{url ('/signin')}}"> <p class="info-text-2 text-center" type="button">Masuk di sini</p> </a>
               </div>
             </div>
           </div>
