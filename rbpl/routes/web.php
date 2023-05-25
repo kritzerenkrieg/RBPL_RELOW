@@ -18,4 +18,10 @@ Route::get('/', function () {
 });
 
 Route::get('/signup','LoginController@signup');
-Route::get('/signin', 'LoginController@signin');
+Route::post('/signup','LoginController@store');
+
+Route::get('/signin', 'LoginController@signin')->middleware('guest');
+Route::post('/signin', 'LoginController@authenticate');
+Route::post('/logout', 'LoginController@logout');
+
+Route::get('/landing', 'LandingController@index');
