@@ -1,43 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    @extends('styling')
     <title>Sign In</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-
-    <!-- Bootstrap CSS v5.2.1 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-      crossorigin="anonymous"
-    />
-
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <!--<script>
-      function showhide() {
-        var x = document.getElementById("formPassword");
-        var show_eye = document.getElementById("show_eye");
-        var hide_eye = document.getElementById("hide_eye");
-        hide_eye.classList.remove("d-none");
-        if (x.type === "password") {
-          x.type = "text";
-          show_eye.style.display = "none";
-          hide_eye.style.display = "block";
-        } else {
-          x.type = "password";
-          show_eye.style.display = "block";
-          hide_eye.style.display = "none";
-        }
-      }
-    </script>-->
   </head>
 
   <body>
