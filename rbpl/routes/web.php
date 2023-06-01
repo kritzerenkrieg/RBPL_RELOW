@@ -17,11 +17,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/signup','LoginController@signup');
+Route::get('/signup','LoginController@signup')->middleware('guest');
 Route::post('/signup','LoginController@store');
 
 Route::get('/signin', 'LoginController@signin')->middleware('guest');
 Route::post('/signin', 'LoginController@authenticate');
 Route::post('/logout', 'LoginController@logout');
 
-Route::get('/landing', 'LandingController@index');
+Route::get('/landing', 'LandingController@dashboard')->middleware('auth');
+

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    @extends('styling')
     <title>Sign In</title>
+    @extends ('styling')
   </head>
 
   <body>
@@ -59,7 +59,7 @@
           <div class="input-group">
             <input
              type="password"
-             class="form-control "
+             class="form-control"
              name="password" 
              id="password"
              required 
