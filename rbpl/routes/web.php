@@ -26,3 +26,5 @@ Route::post('/logout', 'LoginController@logout');
 
 Route::get('/landing', 'LandingController@dashboard')->middleware('auth');
 
+Route::get('/payment', 'PaymentController@payment')->middleware('guest');
+

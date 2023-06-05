@@ -46,8 +46,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
-    
-      
+
+
     <style>
   .stock {
     background-color: #EAEDFA
@@ -78,6 +78,24 @@
   .button-w-icon .material-symbols-outlined {
     font-size: 16px;
     padding-top: 2.45px;
+  }
+
+  .card-text .card-title .main-title {
+    font-size: 23px;
+    font-weight: 700;
+  }
+
+  .sub-title {
+    font-size: 13px;
+    font-weight: 400;
+    color: #8a8a8a;
+
+  }
+
+  .card-price .price-title {
+    font-size: 19px;
+    font-weight: 700;
+
   }
 
   .title {
@@ -114,6 +132,7 @@
   .cta {
     gap: 8px;
   }
+
 
   .button-wo-icon {
     border-radius: 4px;
