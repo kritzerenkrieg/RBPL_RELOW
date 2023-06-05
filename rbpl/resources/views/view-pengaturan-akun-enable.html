@@ -16,8 +16,8 @@
     <div class="sign-up-user">
       <div class="container-1 d-flex flex-column px-3 gap-3">
         <div class="button-w-icon d-flex">
-          <span class="material-symbols-outlined" type="button">arrow_back_ios</span>
-          <p class="button-text" type="button">Kembali</p>
+            <span class="material-symbols-outlined" id="backButton" style="cursor: pointer;">arrow_back_ios</span>
+            <p class="button-text" id="kembaliButton" style="cursor: pointer; text-decoration: none;">Kembali</p>
         </div>
         <form>
         <div class="container-2 d-grid">
@@ -33,7 +33,6 @@
                 <div class="form-1 mb-3">
                   <label for="exampleInputPassword1" class="form-label">Nama</label>
                   <input type="text" class="form-control" id="exampleInputPassword1" />
-                  <a href="" class="edit-link">Edit</a>
                 </div>
 
 
@@ -41,29 +40,27 @@
                 <div class="form-2 mb-3">
                   <label for="exampleInputPassword1" class="form-label">Email</label>
                   <input type="text" class="form-control" id="exampleInputPassword1" />
-                  <span class="edit-link">Edit</span>
                 </div>
 
 
                 <div class="form-3 mb-3">
                   <label for="exampleInputPassword1" class="form-label">Nomor Whatsapp</label>
                   <input type="text" class="form-control" id="exampleInputPassword1" />
-                  <span class="edit-link">Edit</span>
                 </div>
 
 
                 <div class="form-4 mb-3">
                   <label for="exampleInputPassword1" class="form-label">Kata Sandi</label>
                   <input type="password" class="form-control" id="exampleInputPassword1" />
-                  <span class="edit-link">Edit</span>
                 </div>
 
 
               </div>
             </div>
             <div class="cta d-grid">
-              <button class="button-wo-icon" type="button">Sign Out</button>
-              <div class="info-text d-flex justify-content-center">
+                <button class="button-wo-icon" id="saveButton" type="button">Simpan</button>
+                <div class="info-text d-flex justify-content-center">
+                </div>
               </div>
             </form>
 
@@ -77,8 +74,34 @@
   </body>
 </html>
 
+
+
+<script>
+    // ini adalah javascript untuk menuju tampilan disable awal
+    // Menangkap klik tombol
+    document.getElementById("saveButton").addEventListener("click", function() {
+      // Mengarahkan pengguna ke file html yang ditentukan yakni ke disable form
+      window.location.href = "view-pengaturan-akun_disable.html";
+    });
+
+    // ini adalah fungsi biar back button bisa di klik
+  document.getElementById("backButton").addEventListener("click", function() {
+    //ganti path ini dengan halaman view sebelum pengaturan akun. aku gk tau viewnya apa karena aku gk punya flownya
+    window.location.href = "path/ke/file.html";
+  });
+
+  // ini adalah fungsi biar tulisan kembali bisa di klik
+  document.getElementById("kembaliButton").addEventListener("click", function() {
+    //ganti path ini dengan halaman view sebelum pengaturan akun. aku gk tau viewnya apa karena aku gk punya flownya
+    window.location.href = "path/ke/file.html";
+  });
+  </script>
+
+
+
+
 <style>
-  /* ini adalah css nama */
+  /* ini adalah css edit nama */
   .form-1 {
   position: relative;
 }
@@ -92,6 +115,7 @@
   cursor: pointer;
 }
 
+/* ini adalah css edit email */
 .form-2 {
   position: relative;
 }
@@ -105,6 +129,7 @@
   cursor: pointer;
 }
 
+/* ini adalah css edit nomor whatsapp */
 .form-3 {
   position: relative;
 }
@@ -118,6 +143,7 @@
   cursor: pointer;
 }
 
+/* ini adalah css edit katasandi */
 .form-4 {
   position: relative;
 }

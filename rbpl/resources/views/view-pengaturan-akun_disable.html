@@ -16,8 +16,8 @@
     <div class="sign-up-user">
       <div class="container-1 d-flex flex-column px-3 gap-3">
         <div class="button-w-icon d-flex">
-          <span class="material-symbols-outlined" type="button">arrow_back_ios</span>
-          <p class="button-text" type="button">Kembali</p>
+          <span class="material-symbols-outlined" id="backButton" style="cursor: pointer;">arrow_back_ios</span>
+          <p class="button-text" id="kembaliButton" style="cursor: pointer; text-decoration: none;">Kembali</p>
         </div>
         <form>
         <div class="container-2 d-grid">
@@ -62,7 +62,7 @@
               </div>
             </div>
             <div class="cta d-grid">
-              <button class="button-wo-icon" type="button">Sign Out</button>
+              <button class="button-wo-icon" id="saveButton" type="button">Sign Out</button>
               <div class="info-text d-flex justify-content-center">
               </div>
             </form>
@@ -76,6 +76,32 @@
     </div>
   </body>
 </html>
+
+
+<script>
+  // Menangkap klik tombol
+  document.getElementById("saveButton").addEventListener("click", function() {
+    // Mengarahkan pengguna ke file view yang dituju yakni signin
+    window.location.href = "signin.blade.php";
+  });
+
+
+// ini adalah fungsi biar back button bisa di klik
+  document.getElementById("backButton").addEventListener("click", function() {
+    //ganti path ini dengan halaman view sebelum pengaturan akun. aku gk tau viewnya apa karena aku gk punya flownya
+    window.location.href = "path/ke/file.html";
+  });
+
+  // ini adalah fungsi biar tulisan kembali bisa di klik
+  document.getElementById("kembaliButton").addEventListener("click", function() {
+    //ganti path ini dengan halaman view sebelum pengaturan akun. aku gk tau viewnya apa karena aku gk punya flownya
+    window.location.href = "path/ke/file.html";
+  });
+
+</script>
+
+
+
 
 <style>
   /* ini adalah css nama */
