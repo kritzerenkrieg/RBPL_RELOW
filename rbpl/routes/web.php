@@ -24,4 +24,4 @@ Route::get('/signin', 'LoginController@signin')->middleware('guest');
 Route::post('/signin', 'LoginController@authenticate');
 Route::post('/logout', 'LoginController@logout');
 
-Route::get('/landing', 'LandingController@index');
+Route::get('/landing', 'LandingController@landing');
