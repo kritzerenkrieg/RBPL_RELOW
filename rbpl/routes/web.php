@@ -24,7 +24,5 @@ Route::get('/signin', 'LoginController@signin')->middleware('guest');
 Route::post('/signin', 'LoginController@authenticate');
 Route::post('/logout', 'LoginController@logout');
 
-Route::get('/landing', 'LandingController@dashboard')->middleware('auth');
-
-Route::get('/payment', 'PaymentController@payment')->middleware('guest');
+Route::get('/dashboard', 'StockController@showStocks')->middleware('auth');
 

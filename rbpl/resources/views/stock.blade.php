@@ -30,11 +30,17 @@
                 <p class="fw-medium text-left mt-4 mx-4" style="font-size: 11px; color:#545454;">
                 <img src="{{ asset('img/stok.png') }}" alt="" style="height: 15px; width: 15px;" class="me-2"> Stok tersedia
                 </p>
+                <p class="fw-semibold text-left mt-3 mx-4" style="font-size: 28px; color:#333333;">
+                {{ $totalStok }} 
+                </p>
             </div>
             <div class="col bg-white rounded-5 text-end text-end ms-3" style="height: 150px; width:auto;">
             <p class="fw-medium text-start mt-4 mx-3" style="font-size: 11px; color:#545454;">
             <img src="{{ asset('img/gdsw.png') }}" alt="" style="height: 15px; width: 15px;" class="me-2">
                     Gudang Sewa
+                </p>
+                <p class="fw-semibold text-start mt-3 mx-3" style="font-size: 28px; color:#333333;">
+                {{ $gudangCount }}
                 </p>
             </div>
         </div>
@@ -57,7 +63,6 @@
     </button>
     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime debitis aperiam veritatis dolores possimus sunt, dicta perferendis voluptate similique odit at? Dignissimos provident exercitationem repellat minima est molestias enim suscipit.</p>
     
-
     </div>
     
 </form>
