@@ -1,9 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    @extends('styling')
+   @extends ('master')
+   @section('konten')
 <title>Payment</title>
-  </head>
   <body>
     <div class="payment">
         <div class="container-1 d-flex flex-column px-3">
@@ -16,7 +13,7 @@
                 <div class="home-card-section d-flex flex-column gap-0 shadow p-3 mb-5 bg-body rounded">
                     <div class="card-text">
                         <div class="card-title text-start d-flex flex-column">
-                            <h2 class="main-title">BARNhouse Serbaguna Surabaya</h2>
+                            <h2 class="main-title fw-semibold">BARNhouse Serbaguna Surabaya</h2>
                         </div>
                     </div>
                     <div class="card-price d-flex flex-column">
@@ -39,17 +36,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="cta d-grid pt-2">
+                    <div class="cta d-grid pt-2 mt-3">
                         <button class="button-wo-icon" type="submit">Lanjutkan Pembayaran</button>
                     </div>
                     <div class="note pt-3">
-                        <p class="sub-title">Note : Hubungi admin untuk pengisian stock. (kontak admin terdapat pada menu “about”)</p>
+                        <p class="sub-title" style="color : #8a8a8a">Note : Hubungi admin untuk pengisian stock. (kontak admin terdapat pada menu “about”)</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
   </body>
-</html>
+@endsection
 
 

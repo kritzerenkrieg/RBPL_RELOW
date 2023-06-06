@@ -26,3 +26,4 @@ Route::post('/logout', 'LoginController@logout');
 
 Route::get('/dashboard', 'StockController@showStocks')->middleware('auth');
 
+Route::get('/payment', 'PaymentController@Payment');
