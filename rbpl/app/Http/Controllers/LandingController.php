@@ -14,4 +14,5 @@ class LandingController extends Controller
         return view('stock');
     }
     //
+    }
 }
