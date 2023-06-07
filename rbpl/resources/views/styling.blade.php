@@ -61,16 +61,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
     
-<<<<<<< HEAD
 <style>
 
-=======
-      
-    <style>
-  .stock {
-    background-color: #EAEDFA
-  }
->>>>>>> 17044ed4d01ab499612273b0f59deaeca5addb9e
   .sign-up-user {
     font-family: "Poppins", sans-serif;
   }
@@ -106,19 +98,12 @@
   .title .sub-title {
     font-size: 11px;
     font-weight: 400;
-<<<<<<< HEAD
-    font-family: poppins;
-=======
->>>>>>> 17044ed4d01ab499612273b0f59deaeca5addb9e
   }
 
   .title .main-title {
     font-size: 19px;
     font-weight: 700;
-<<<<<<< HEAD
     font-family: poppins;
-=======
->>>>>>> 17044ed4d01ab499612273b0f59deaeca5addb9e
   }
 
   .form-cta-control {
@@ -153,7 +138,6 @@
     font-size: 13px;
   }
 
-<<<<<<< HEAD
   .zrayastyle {
     border-radius: 4px;
     border-color: transparent;
@@ -166,8 +150,6 @@
     font-size: 13px;
   }
 
-=======
->>>>>>> 17044ed4d01ab499612273b0f59deaeca5addb9e
   .button-wo-icon:hover {
     background-color: #2642bb;
     transition: 0.2s;
@@ -185,16 +167,13 @@
     color: #2a49ce;
     font-size: 13px;
   }
-<<<<<<< HEAD
 
   .no-space {
     display: block;
   }
   </style>
-=======
 </style>
 
->>>>>>> 17044ed4d01ab499612273b0f59deaeca5addb9e
 
 </head>
 </html>

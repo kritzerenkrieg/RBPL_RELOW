@@ -23,11 +23,6 @@ Route::post('/signup','LoginController@store');
 Route::get('/signin', 'LoginController@signin')->middleware('guest');
 Route::post('/signin', 'LoginController@authenticate');
 Route::post('/logout', 'LoginController@logout');
-
-<<<<<<< HEAD
 Route::get('/landing', 'LandingController@landing');
-=======
 Route::get('/dashboard', 'StockController@showStocks')->middleware('auth');
-
 Route::get('/payment', 'PaymentController@Payment');
->>>>>>> 17044ed4d01ab499612273b0f59deaeca5addb9e
