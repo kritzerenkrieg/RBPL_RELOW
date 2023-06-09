@@ -66,7 +66,7 @@
     <button type="submit" class="btn btn-danger ">
         LOGOUT
     </button>
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime debitis aperiam veritatis dolores possimus sunt, dicta perferendis voluptate similique odit at? Dignissimos provident exercitationem repellat minima est molestias enim suscipit.</p>
+    <p> Lorems ipsum dolor sit amet consectetur adipisicing elit. Maxime debitis aperiam veritatis dolores possimus sunt, dicta perferendis voluptate similique odit at? Dignissimos provident exercitationem repellat minima est molestias enim suscipit.</p>
     
     </div>
     
