@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\User;
 use App\Stock;
+use App\StokMasuk;
+use App\StokKeluar;
 use Carbon\Carbon;
 
 
@@ -50,8 +52,19 @@ class StockController extends Controller
         $totalStok = $user->stocks()->sum('stok');
         $tanggal_update = Stock::pluck('tanggal_update');
 
-            
-        return view('grafikStock', compact('stocks', 'gudangCount', 'totalStok', 'tanggal_update'));    
+        $masuk = StokMasuk::select(DB::raw("CAST(SUM(jumlah)as int)as masuk"))
+        ->GroupBy(DB::raw("Month(tanggal_masuk)"))
+        ->pluck('masuk');
+        $bulan = StokMasuk::select(DB::raw("MONTHNAME(tanggal_masuk)as bulan"))
+        ->GroupBy(DB::raw("MONTHNAME(tanggal_masuk)"))
+        ->orderByRaw("MONTH(tanggal_masuk)")
+        ->pluck('bulan');
+
+        $keluar = StokKeluar::select(DB::raw("CAST(SUM(jumlah)as int)as keluar"))
+        ->GroupBy(DB::raw("Month(tanggal_keluar)"))
+        ->pluck('keluar');
+
+        return view('grafikStock', compact('stocks', 'gudangCount', 'totalStok', 'tanggal_update', 'masuk', 'bulan', 'keluar'));    
     }
     //
 }

@@ -16,7 +16,8 @@
     <p class="mt-0 mb-4 text-center" style="color: #8a8a8a; font-size: 11px">
         Cek aktivitas gudangmu secara berkala!
     </p>
-   
+   <div id="grafik"></div>
+
         <div class="row mt-2">
             <div class="col bg-white rounded-5 text-start text-start margin-end-3" style=" height: 150px; width: auto;">
                 <p class="fw-medium text-left mt-4 mx-3" style="font-size: 11px; color:#545454;">
@@ -72,4 +73,38 @@
     
 </form>
 </body>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script type="text/javascript">
+    var stokmasuk = <?php echo json_encode($masuk) ?>;
+    var bulan = <?php echo json_encode($bulan) ?>;
+    var stokkeluar = <?php echo json_encode($keluar) ?>;
+    Highcharts.chart('grafik', {
+        title : {
+            text : 'Grafik keluar masuk stok bulanan' 
+        },
+        xAxis : {
+            categories : bulan
+        },
+        yAxis : {
+            title : {
+                text : 'Jumlah stok'
+            }
+        },
+        plotOptions : {
+            series : {
+                allowPointSelect : true
+            }
+        },
+        series : [
+            {
+                name : 'Jumlah Stok Masuk',
+                data : stokmasuk
+            },
+            {
+                name : 'Jumlah Stok Keluar',
+                data : stokkeluar
+            }
+        ]
+    })
+</script>
 @endsection
