@@ -49,6 +49,8 @@ class StockController extends Controller
         $gudangCount = $user->stocks_count;
         $totalStok = $user->stocks()->sum('stok');
         $tanggal_update = Stock::pluck('tanggal_update');
+
+            
         return view('grafikStock', compact('stocks', 'gudangCount', 'totalStok', 'tanggal_update'));    
     }
     //
