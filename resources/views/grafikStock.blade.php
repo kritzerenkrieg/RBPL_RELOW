@@ -74,6 +74,7 @@
 </form>
 </body>
 <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src=""></script>
 <script type="text/javascript">
     var stokmasuk = <?php echo json_encode($masuk) ?>;
     var bulan = <?php echo json_encode($bulan) ?>;
@@ -97,10 +98,12 @@
         },
         series : [
             {
+                type : 'spline',
                 name : 'Jumlah Stok Masuk',
                 data : stokmasuk
             },
             {
+                type : 'spline',
                 name : 'Jumlah Stok Keluar',
                 data : stokkeluar
             }
