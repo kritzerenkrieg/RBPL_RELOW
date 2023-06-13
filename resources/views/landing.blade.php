@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Landing Page</title>
-  </head>
-  
+  @extends ('master')
+  @section ('konten')
+
+   <title>Landing Page</title>
+
   <body>
-    @extends('styling')
   <div class="container-fluid p-0">
         <img src="{{ asset('images/landing.jpg') }}" class="img-fluid no-space" alt="Image Missing">
   </div>
