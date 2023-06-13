@@ -14,8 +14,7 @@ class CreateStocksTable extends Migration
     public function up()
     {
         Schema::create('stocks', function (Blueprint $table) {
-            $table->unsignedInteger("id");
-            $table->foreign("id")->references("id")->on("users");
+            $table->foreignId("id");
             $table->string("id_barang");
             $table->foreign("id_barang")->references("id_barang")->on("barang");
             $table->integer("stok");

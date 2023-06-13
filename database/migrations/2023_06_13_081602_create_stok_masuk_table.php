@@ -20,8 +20,7 @@ class CreateStokMasukTable extends Migration
             $table->date("tanggal_masuk");
             $table->integer("jumlah");
             $table->string("keterangan");
-            $table->unsignedInteger("id");
-            $table->foreign("id")->references("id")->on("users");
+            $table->foreignId("id");
             $table->string("id_gudang");
             $table->foreign("id_gudang")->references("id_gudang")->on("gudang");
         });

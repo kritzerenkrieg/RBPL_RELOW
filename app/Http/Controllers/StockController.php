@@ -20,7 +20,7 @@ class StockController extends Controller
         $stocks = $user->stocks;
         $gudangCount = $user->stocks_count;
         $totalStok = $user->stocks()->sum('stok');
-        $tanggal_update = Stock::pluck('tanggal_update');
+        $tanggal_update = ($user->stocks()->count() < 1) ? 0 : $user->stocks()->pluck('tanggal_update');
     
         //dd($stocks);
     
@@ -50,7 +50,7 @@ class StockController extends Controller
         $stocks = $user->stocks;
         $gudangCount = $user->stocks_count;
         $totalStok = $user->stocks()->sum('stok');
-        $tanggal_update = Stock::pluck('tanggal_update');
+        $tanggal_update = ($user->stocks()->count() < 1) ? 0 : $user->stocks()->pluck('tanggal_update');
 
         $masuk = StokMasuk::select(DB::raw("CAST(SUM(jumlah)as int)as masuk"))
         ->GroupBy(DB::raw("Month(tanggal_masuk)"))
