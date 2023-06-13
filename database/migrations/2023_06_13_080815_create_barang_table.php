@@ -18,7 +18,6 @@ class CreateBarangTable extends Migration
             $table->string("id_gudang");
             $table->foreign("id_gudang")->references("id_gudang")->on("gudang");
             $table->string("nama_barang");
-
         });
     }
 
