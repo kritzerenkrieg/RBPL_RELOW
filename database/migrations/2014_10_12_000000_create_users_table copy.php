@@ -13,8 +13,8 @@ class CreateUsersTableCopy extends Migration
      */
     public function up()
     {
-        Schema::create('tes', function (Blueprint $table) {
-            $table->id();
+        Schema::create('userscopy', function (Blueprint $table) {
+            $table->unsignedInteger("id")->primary();
             $table->string('nama');
             $table->string('email')->unique();
             $table->string('password');

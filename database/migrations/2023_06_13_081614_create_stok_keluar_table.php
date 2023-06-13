@@ -14,8 +14,16 @@ class CreateStokKeluarTable extends Migration
     public function up()
     {
         Schema::create('stok_keluar', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->integer("id_keluar")->primary();
+            $table->string("id_barang");
+            $table->foreign("id_barang")->references("id_barang")->on("barang");
+            $table->date("tanggal_keluar");
+            $table->integer("jumlah");
+            $table->string("keterangan");
+            $table->unsignedInteger("id");
+            $table->foreign("id")->references("id")->on("users");
+            $table->string("id_gudang");
+            $table->foreign("id_gudang")->references("id_gudang")->on("gudang");
         });
     }
 
