@@ -14,8 +14,9 @@ class CreateGudangTable extends Migration
     public function up()
     {
         Schema::create('gudang', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->string("id_gudang")->primary();
+            $table->string("nama_gudang");
+            $table->string("harga_gudang");
         });
     }
 
