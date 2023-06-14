@@ -31,18 +31,31 @@
                   <label for="examplePayment" class="form-label">Total Tagihan</label>
                   <input type="text" class="form-control" id="examplePayment" disabled/>
                 </div>
-                <div class="form-2 mb-3">
+                <div class="form-3 mb-3 gap-1">
                   <label for="examplePayment" class="form-label">Rekening Tujuan</label>
-                  <input type="text" class="form-control" id="examplePayment" disabled/>
-                </div>
-                <div class="form-3 mb-3">
-                  <label for="examplePayment" class="form-label">BCA</label>
-                  <input type="text" class="form-control" id="examplePayment" disabled/>
+                  <div class="form-3-1">
+                    <input type="text" class="form-control" id="examplePayment" disabled/>
+                  </div>
+                  <div class="form-3-2 d-flex flex-row bd-highlight py-3">
+                    <div class="bank">
+                      <div class="p-2 flex-fill bd-highlight">BCA</div>
+
+                    </div>
+                    <div class="nominal flex-grow-1 bd-highlight" >
+                      <input type="text" class="form-control" id="examplePayment" disabled/>
+                    </div>
+                  </div>
+
                 </div>
                 <div class="form-4 mb-3">
                   <label for="examplePayment" class="form-label">Bukti Pembayaran</label>
-                  <input type="password" class="form-control" id="examplePayment" />
+                  <div class="file-upload-wrapper">
+                    <input type="file" id="input-file-now" class="file-upload-input" data-mdb-file-upload="file-upload"/>
+                  </div>
+
+
                 </div>
+
               </div>
             </div>
             <div class="cta d-grid">
@@ -116,6 +129,27 @@
     font-size: 13px;
   }
 
+  .dashed {
+    font-size: 13px;
+    border-style: dashed;
+  }
+
+  .bank {
+  border: 1px solid #333333;;
+  border-radius: 5px;
+  height:33px;
+}
+
+.form-3-2 {
+  gap: 16px;
+}
+
+  .form-4 .form-control {
+    width: 100%;
+    height: 100px;
+    border-style: dashed;
+  }
+
   .cta {
     gap: 8px;
   }
@@ -148,4 +182,19 @@
     color: #2a49ce;
     font-size: 13px;
   }
+
+  .file-upload-input {
+    width: 100%;
+    height: 100px;
+    opacity: 0%;
+    border-style: dashed;
+  }
+  .file-upload-wrapper {
+    width: 100%;
+    height: 100px;
+    opacity: 20%;
+    border-style: dashed;
+    border-radius: 6px;
+  }
+
 </style>
