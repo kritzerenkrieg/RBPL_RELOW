@@ -1,10 +1,15 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Http\Request;
 use App\User;
-use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Password;
+use Illuminate\Auth\Events\PasswordReset;
+use Illumimate\Support\Facades\Mail;
+use Illumimate\Support\Facades\Notification;
 
 class LoginController extends Controller
 {
@@ -45,15 +50,49 @@ class LoginController extends Controller
 		return back()->with('loginError', 'Login gagal');
 
 			}
-			public function logout(Request $request){
+		public function logout(Request $request){
 				Auth::logout();
 				$request->session()->invalidate();
 				$request->session()->regenerateToken();
 				return redirect('signin');
 			}
+		
+		public function forgotPassword(){
+			return view('forgotPassword');
+		}
+		public function resetPassword($token){
+			return view('resetPassword', ['token' => $token]);
+		}
+		public function authenticatepw(Request $request){
+			//return view('signin');
+			$validated = $request->validate([
+				'token' => 'required',
+				'email' => 'required|email',
+				'password' => 'required|min:8|confirmed',
+			]);
 
-	}
-
-	
-
-
+			 $status = Password::reset(
+				$request->only('email', 'password', 'password_confirmation', 'token'),
+				function ($user, $password) {
+					$user->forceFill([
+						'password' => Hash::make($password)
+					])->setRememberToken(Str::random(60));
+					$user->save();
+		
+					event(new PasswordReset($user));
+				}
+			); 
+			if ($status == Password::PASSWORD_RESET){
+				return redirect()->route('signin')->with('success', 'Password telah berhasil diubah, mohon login dengan password yang baru!');
+			}
+			else {
+				return redirect()->back()
+				->withInput($request->only('email'))
+				->withErrors(['email'=>trans($response)]);
+			} 
+		
+			// return $status === Password::PASSWORD_RESET
+			// 	? redirect()->route('signin')->with('status', "sukses!")
+			// 	: back()->with('loginError', "Login gagal");
+		}
+		}
