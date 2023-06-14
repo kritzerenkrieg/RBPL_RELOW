@@ -1,5 +1,6 @@
    @extends ('master')
    @section('konten')
+   
 <title>Payment</title>
   <body>
     <div class="payment">

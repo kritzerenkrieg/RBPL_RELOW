@@ -63,6 +63,11 @@
     
 <style>
 
+  .stock {
+    background-color: #EAEDFA;
+  }
+
+
   .sign-up-user {
     font-family: "Poppins", sans-serif;
   }
@@ -98,6 +103,8 @@
   .title .sub-title {
     font-size: 11px;
     font-weight: 400;
+    font-family: poppins;
+    color: #8A8A8A;
   }
 
   .title .main-title {
@@ -138,6 +145,12 @@
     font-size: 13px;
   }
 
+  .zrayacenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
   .zrayastyle {
     border-radius: 4px;
     border-color: transparent;
@@ -145,9 +158,23 @@
     color: #2a49ce;
     outline: 2px solid #2a49ce;
     font-weight: 600;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    font-family: poppins;
+    padding: 6px;
+    padding-left: 5vh;
+    padding-right: 5vh;
     font-size: 13px;
+    width: 35vh;
+    margin: 16px;
+  }
+
+  .card-header{
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-font{
+    font-family: poppins;
+    font-weight: bold;
   }
 
   .button-wo-icon:hover {

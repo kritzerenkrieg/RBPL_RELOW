@@ -20,9 +20,13 @@ Route::get('/', function () {
 Route::get('/signup','LoginController@signup')->middleware('guest');
 Route::post('/signup','LoginController@store');
 
-Route::get('/signin', 'LoginController@signin')->middleware('guest');
+Route::get('/signin', 'LoginController@signin');
 Route::post('/signin', 'LoginController@authenticate');
 Route::post('/logout', 'LoginController@logout');
-Route::get('/landing', 'LandingController@landing');
+
 Route::get('/dashboard', 'StockController@showStocks')->middleware('auth');
+Route::get('/stock', 'StockController@grafik');
+
 Route::get('/payment', 'PaymentController@Payment');
+
+Route::get('/landing', 'LandingController@landing')->middleware('auth');
