@@ -76,9 +76,9 @@
           </div>-->
         </div>
         <div class="text-end">
-          <label for="" class="fw-bold" style="font-size: 13px; color: #2a49ce"
-            >Lupa kata sandi?</label
-          >
+        <a href="{{ url ('/forgot-password')}}" style="text-decoration: none;">
+        <span class="info-text" style="color: #2a49ce" type="button"><b>Lupa Kata Sandi?</b>
+           </a>
         </div>
         <div class="text-center mt-5 d-grid gap-2">
           <button type="submit" class="btn btn-primary" style="font-size: 13px">
