@@ -20,7 +20,7 @@
               <div class="payment-user">
                 <div class="form-1 mb-3">
                   <label for="examplePayment" class="form-label">Total Tagihan</label>
-                  <input type="text" class="form-control" id="examplePayment" disabled/>
+                  <input value="" type="text" class="form-control" id="examplePayment" disabled/>
                 </div>
                 <div class="form-3 mb-3 gap-1">
                   <label for="examplePayment" class="form-label">Rekening Tujuan</label>
@@ -33,7 +33,7 @@
 
                     </div>
                     <div class="nominal flex-grow-1 bd-highlight" >
-                      <input type="text" class="form-control" id="examplePayment" disabled/>
+                      <input value ="0481889234" type="text" class="form-control" id="examplePayment" disabled/>
                     </div>
                   </div>
 

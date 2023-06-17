@@ -38,7 +38,9 @@
                         </div>
                     </div>
                     <div class="cta d-grid pt-2 mt-3">
-                        <button class="button-wo-icon" type="submit">Lanjutkan Pembayaran</button>
+                        <a href="{{url('/co')}}" class="button-wo-icon text-center">
+                        <button class="bton-wo-icon" type="submit">Lanjutkan Pembayaran</button>
+                        </a>
                     </div>
                     <div class="note pt-3">
                         <p class="sub-title" style="color : #8a8a8a">Note : Hubungi admin untuk pengisian stock. (kontak admin terdapat pada menu “about”)</p>

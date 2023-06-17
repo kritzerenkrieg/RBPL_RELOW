@@ -21,14 +21,14 @@
                     </a>
                 </div>
                 <div class="nav-link text-center w-100">
-                    <a href="{{url('/edit')}}" class="nv">
+                    <a href="{{url('/index')}}" class="nv">
 
                         <span class="material-icons">receipt</span>
                         <p class="nav-text-title">Order</p>
                     </a>
                 </div>
                 <div class="nav-link text-center w-100">
-                    <a href="{{url('/pengaturan')}}" class="nv">
+                    <a href="{{url('/about')}}" class="nv">
 
                         <span class="material-icons">import_contacts</span>
                         <p class="nav-text-title">About</p>

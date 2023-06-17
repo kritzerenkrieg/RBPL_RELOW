@@ -52,7 +52,10 @@ Route::get('/co', 'PaymentController@checkout');
 
 Route::get('/landing', 'LandingController@landing')->middleware('auth');
 Route::get('/index','IndexController@index');
+Route::get('/about', 'LandingController@about');
+
 Route::get('/pengaturan', 'pengaturanController@pengaturan')->name('user_settings');
 Route::get('/edit', 'pengaturanController@edit');
 Route::put('/edit/{id}', 'pengaturanController@update')->name('user_edit');
-Route::get('/about', 'LandingController@about');
+
+
