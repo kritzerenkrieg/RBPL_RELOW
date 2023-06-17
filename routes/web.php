@@ -51,3 +51,6 @@ Route::get('/payment', 'PaymentController@Payment');
 Route::get('/co', 'PaymentController@checkout');
 
 Route::get('/landing', 'LandingController@landing')->middleware('auth');
+
+Route::get('/pengaturan', 'pengaturanController@pengaturan');
+Route::get('/edit', 'pengaturanController@edit');
