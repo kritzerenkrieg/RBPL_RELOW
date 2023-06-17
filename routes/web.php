@@ -15,6 +15,7 @@ use Illuminate\Auth\Events\PasswordReset;
 | contains the "web" middleware group. Now create something great!
 |
 */
+use App\Http\Controllers\PaymentController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -48,7 +49,8 @@ Route::get('/dashboard', 'StockController@showStocks')->middleware('auth');
 Route::get('/stock', 'StockController@grafik');
 
 Route::get('/payment', 'PaymentController@Payment');
-Route::get('/payment/{id}' , 'PaymentController@index');
+Route::get('/payment/{id}', [PaymentController::class, 'payment'])->name('payment.req');
+
 Route::get('/co', 'PaymentController@checkout');
 
 Route::get('/landing', 'LandingController@landing')->middleware('auth');
