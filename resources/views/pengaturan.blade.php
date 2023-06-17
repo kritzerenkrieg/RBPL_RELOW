@@ -3,6 +3,12 @@
 
 <title>Settings</title>
   <body>
+  @if(session('success'))
+    <div class="alert alert-success">
+        {{ session('success') }}
+    </div>
+@endif
+
     <div class="sign-up-user">
       <div class="container-1 d-flex flex-column px-3 gap-3">
         <a href="{{url ('/dashboard')}}" class="button-w-icon d-flex">
@@ -40,7 +46,6 @@
                   <input value="0{{auth()->user()->nohp}}" type="text" class="form-control" id="exampleInputPassword1" disabled />
                   <a href="{{url ('/edit')}}" class="edit-link">Edit</a>
                 </div>
-<<<<<<< HEAD
 
 
                 <!-- <div class="form-4 mb-3">
@@ -50,8 +55,6 @@
                 </div> -->
 
 
-=======
->>>>>>> 4586bc503d8caa91f18020611294af268b359a82
               </div>
             </div>
             </form>

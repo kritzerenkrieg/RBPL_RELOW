@@ -38,6 +38,7 @@ class pengaturanController extends Controller
 		$user->save();
 
 		// Redirect to a success page or return a response
-		return redirect()->route('user_settings')->with('success', 'User updated successfully');
+		$request->session()->flash('success', 'Informasi akun berhasil diubah');
+		return redirect()->route('user_settings'); //->with('success', 'Informasi akun berhasil diubah');
 	}
 }
