@@ -5,6 +5,14 @@
     <title>Lupa Kata Sandi</title>
   </head>
   <body>
+
+   @if(session()->has('success'))
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+          {{ session('success') }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        @endif
+
     <div class="sign-up-user">
       <div class="container-1 d-flex flex-column px-3 gap-3">
         <a href="{{url ('/pengaturan')}}" class="button-w-icon d-flex">
@@ -47,10 +55,10 @@
 
               </div>
             </div>
-            <div class="cta d-grid">
-                <a href="{{url ('/signin')}}" class="button-wo-icon text-center">
-                    <button class="bton-wo-icon" id="saveButton" type="button">Kirim</button>
-                </a>
+            <div class="cta d-grid button-wo-icon text-center">
+                <!-- <a href="{{url ('/signin')}}" class="button-wo-icon text-center"> -->
+                    <button class="bton-wo-icon" id="saveButton" type="submit">Kirim</button>
+                <!-- </a> -->
                 <div class="info-text d-flex justify-content-center">
                 </div>
               </div>

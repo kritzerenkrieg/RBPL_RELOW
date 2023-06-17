@@ -41,7 +41,7 @@
                 <div class="form-4 mb-3">
                   <label for="examplePayment" class="form-label">Bukti Pembayaran</label>
                   <div class="file-upload-wrapper">
-                    <input type="file" id="input-file-now" class="file-upload-input" data-mdb-file-upload="file-upload"/>
+                    <input type="file" id="input-file-now" class="file-upload-input" data-mdb-file-upload="file-upload" required />
                   </div>
 
 

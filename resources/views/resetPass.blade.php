@@ -54,7 +54,7 @@
                 <div class="form-2 mb-3">
                     <label for="password_confirmation" class="form-label">Konfirmasi Kata Sandi</label>
                     <input type="password" class="form-control @error('password') is-invalid @enderror"
-                    name="passwordConfirmation" id="passwordConfirmation">
+                    name="password_confirmation" id="password_confirmation">
                     {{-- @error('password')
                       <div class="invalid-feedback" >
                         Kata sandi setidaknya 8 karakter
@@ -64,10 +64,8 @@
 
               </div>
             </div>
-            <div class="cta d-grid">
-                <a href="{{url ('/signin')}}" class="button-wo-icon text-center">
-                    <button class="bton-wo-icon" id="saveButton" type="button">Update</button>
-                </a>
+            <div class="cta d-grid button-wo-icon text-center">
+                    <button class="bton-wo-icon" id="saveButton" type="submit">Update</button>
                 <div class="info-text d-flex justify-content-center">
                 </div>
               </div>
