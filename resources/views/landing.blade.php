@@ -12,7 +12,22 @@
           <div class="title text-left d-flex flex-column p-4">
             <h2 class="main-title">Gudang menarik untuk bisnismu</h2>
             <p class="sub-title">Ada beragam jenis gudang yang cocok buat kamu nih! Yuk temukan selera hatimu sekarang!</p>
-            <p><p><p><p>  {{--INI NANTI DELETE KLO ADA PAGINATE--}}
+            
+            <div class="card-container d-flex flex-wrap">
+            @foreach($gudang as $g)
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">{{ $g->nama_gudang }}</h5>
+                <p class="card-text">{{ $g->lokasi_gudang }}</p>
+                <p class="card-text">{{ $g->harga_gudang }}</p>
+                <a href="#" class="btn btn-primary">Order</a>
+              </div>
+            </div>
+            @endforeach
+            </div>
+
+            <script src="{{ asset('js/app.js') }}"></script>
             <div class="zrayacenter">
             <button class="btn zrayastyle">
             Lihat Semua Gudang
