@@ -10,9 +10,13 @@ class LandingController extends Controller
     public function landing(){
         return view('landing');
     }
-        
+
     public function dashboard(){
         return view('stock');
     }
-    
+
+    public function about(){
+        return view('about');
+    }
+
 }

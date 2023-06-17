@@ -296,6 +296,25 @@
     color: #b0b0b0;
   }
 
+  .read-more-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.read-more-content:target {
+    max-height: 1000px; /* Adjust the value to fit your content */
+    transition: max-height 0.3s ease;
+}
+
+.read-more-button {
+    cursor: pointer;
+    color: blue;
+    display: block;
+}
+
+
+
   /* .nav-link:active::before {
     color: #2A49CE;
   } */
