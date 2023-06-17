@@ -28,5 +28,9 @@ Route::get('/dashboard', 'StockController@showStocks')->middleware('auth');
 Route::get('/stock', 'StockController@grafik');
 
 Route::get('/payment', 'PaymentController@Payment');
+Route::get('/checkout', function(){
+    return view ("payment_checkout");
+}
+);
 
-Route::get('/landing', 'LandingController@landing')->middleware('auth');
+Route::get('/landing', 'LandingController@landing');

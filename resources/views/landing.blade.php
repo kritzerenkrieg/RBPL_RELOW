@@ -18,10 +18,8 @@
             Lihat Semua Gudang
             </button>
             </div>
-        
+            
           </div>
-
-          
   </div>
 
   <div class="container-2 d-grid card-header">
