@@ -50,7 +50,7 @@ Route::get('/stock', 'StockController@grafik');
 
 Route::get('/payment', 'PaymentController@Payment');
 Route::get('/payment/{id}', [PaymentController::class, 'payment'])->name('payment.req');
-
+Route::get('/co/{id}', [PaymentController::class, 'checkout'])->name('checkout.req');
 Route::get('/co', 'PaymentController@checkout');
 
 Route::get('/landing', 'LandingController@landing')->middleware('auth');

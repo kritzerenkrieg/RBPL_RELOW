@@ -14,13 +14,13 @@
                 <div class="home-card-section d-flex flex-column gap-0 shadow p-3 mb-5 bg-body rounded">
                     <div class="card-text">
                         <div class="card-title text-start d-flex flex-column">
-                            <h2 class="main-title fw-semibold">{{$gudang}}</h2>
+                            <h2 class="main-title fw-semibold">{{$payment->nama_gudang}}</h2>
                         </div>
                     </div>
                     <div class="card-price d-flex flex-column">
-                        <p class="sub-title">Sukolilo, Surabaya</p>
+                        <p class="sub-title">{{$payment->lokasi_gudang}}</p>
                         <div class="card-info d-flex gap-2">
-                            <h2 class="price-title">Rp350,000</h2>
+                            <h2 class="price-title">Rp.{{$payment->harga_gudang}}</h2>
                             <p class="sub-title">per bulan</p>
                         </div>
                     </div>
@@ -38,7 +38,7 @@
                         </div>
                     </div>
                     <div class="cta d-grid pt-2 mt-3">
-                        <a href="{{url('/co')}}" class="button-wo-icon text-center">
+                        <a href="{{route('checkout.req', ['id'=>$id])}}" class="button-wo-icon text-center">
                         <button class="bton-wo-icon" type="submit">Lanjutkan Pembayaran</button>
                         </a>
                     </div>

@@ -6,7 +6,7 @@
 <body>
     <div class="payment-user">
       <div class="container-1 d-flex flex-column px-3 gap-3">
-        <a href="{{url ('/signin')}}" class="button-w-icon d-flex">
+        <a href="{{route ('payment.req', ['id'=> $id])}}" class="button-w-icon d-flex">
           <span class="material-symbols-outlined" type="button">arrow_back_ios</span>
           <p class="button-text" type="button">Kembali</p>
         </a>
@@ -20,12 +20,12 @@
               <div class="payment-user">
                 <div class="form-1 mb-3">
                   <label for="examplePayment" class="form-label">Total Tagihan</label>
-                  <input value="" type="text" class="form-control" id="examplePayment" disabled/>
+                  <input value="Rp.{{$payment->harga_gudang}}" type="text" class="form-control" id="examplePayment" disabled/>
                 </div>
                 <div class="form-3 mb-3 gap-1">
                   <label for="examplePayment" class="form-label">Rekening Tujuan</label>
                   <div class="form-3-1">
-                    <input type="text" class="form-control" id="examplePayment" disabled/>
+                    <input value="Relow" type="text" class="form-control" id="examplePayment" disabled/>
                   </div>
                   <div class="form-3-2 d-flex flex-row bd-highlight py-3">
                     <div class="bank">

@@ -6,9 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Payment extends Model
 {
-    public function user()
-    {
-        return $this->belongsTo(Users::class, 'id');
-    }
+    // public function user()
+    // {
+    //     return $this->belongsTo(Users::class, 'id');
+    // }
+    protected $table = 'gudang';
     //
 }
