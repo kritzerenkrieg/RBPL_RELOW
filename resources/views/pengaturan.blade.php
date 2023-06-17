@@ -22,7 +22,7 @@
               <div class="form-sign-up">
                 <div class="form-1 mb-3">
                   <label for="exampleInputPassword1" class="form-label">Nama</label>
-                  <input type="text" class="form-control" id="exampleInputPassword1" disabled />
+                  <input value= "{{auth()->user()->nama}}" type="text" class="form-control" id="exampleInputPassword1" disabled />
                   <a href="{{url ('/edit')}}" class="edit-link">Edit</a>
                 </div>
 
@@ -30,14 +30,14 @@
 
                 <div class="form-2 mb-3">
                   <label for="exampleInputPassword1" class="form-label">Email</label>
-                  <input type="text" class="form-control" id="exampleInputPassword1" disabled />
+                  <input value="{{auth()->user()->email}}" type="text" class="form-control" id="exampleInputPassword1" disabled />
                   <a href="{{url ('/edit')}}" class="edit-link">Edit</a>
                 </div>
 
 
                 <div class="form-3 mb-3">
                   <label for="exampleInputPassword1" class="form-label">Nomor Whatsapp</label>
-                  <input type="text" class="form-control" id="exampleInputPassword1" disabled />
+                  <input value="0{{auth()->user()->nohp}}" type="text" class="form-control" id="exampleInputPassword1" disabled />
                   <a href="{{url ('/edit')}}" class="edit-link">Edit</a>
                 </div>
 

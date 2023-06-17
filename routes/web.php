@@ -20,7 +20,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/signup','LoginController@signup');
+Route::get('/signup','LoginController@signup')->middleware('guest');
 Route::post('/signup','LoginController@store');
 
 Route::get('/signin', 'LoginController@signin')->name('signin')->middleware('guest');
