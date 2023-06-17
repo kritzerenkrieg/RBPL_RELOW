@@ -22,6 +22,11 @@
       crossorigin="anonymous"
     ></script>
 
+
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.js"
+    integrity="sha256-7GO+jepT9gJe9LB4XFf8snVOjX3iYNb0FHYr5LI1N5c="
+    crossorigin="anonymous"></script>
+
     <!-- Bootstrap CSS v5.2.1 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
@@ -51,16 +56,17 @@
         }
       }
     </script>-->
-    
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <link href="style-signup.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
-    
+
 <style>
 
   .stock {
@@ -134,6 +140,12 @@
     gap: 8px;
   }
 
+  .material-symbols-outlined {
+    color: #000;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #000;
+  }
+
   .button-wo-icon {
     border-radius: 4px;
     border-color: transparent;
@@ -150,7 +162,7 @@
     justify-content: center;
     align-items: center;
   }
-  
+
   .zrayastyle {
     border-radius: 4px;
     border-color: transparent;
@@ -198,9 +210,107 @@
   .no-space {
     display: block;
   }
-  </style>
-</style>
 
+  .form-1 {
+  position: relative;
+  }
+
+  .edit-link {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: blue;
+  text-decoration: none;
+  cursor: pointer;
+  }
+
+  .form-2 {
+  position: relative;
+  }
+
+  .edit-link2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: blue;
+  text-decoration: none;
+  cursor: pointer;
+  }
+
+  .form-3 {
+  position: relative;
+  }
+
+  .edit-link3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: blue;
+  text-decoration: none;
+  cursor: pointer;
+  }
+
+  .form-4 {
+  position: relative;
+  }
+
+  .edit-link4 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: blue;
+  text-decoration: none;
+  cursor: pointer;
+  }
+
+  .navigation {
+    gap: 20px;
+  }
+
+  .bton-wo-icon {
+    border-radius: 4px;
+    border-color: transparent;
+    background-color: transparent;
+    color: #eaedfa;
+    font-weight: 600;
+    font-size: 13px;
+  }
+
+
+  .nav-text-title {
+    font-size: 11px;
+    color: #545454;
+  }
+
+  /* .material-icons {
+    color: #B0B0B0;
+  } */
+
+  .navbar {
+    background-color: #ffffff;
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.25);
+    height: 72px;
+  }
+
+  .nv {
+    color: #b0b0b0;
+  }
+
+  /* .nav-link:active::before {
+    color: #2A49CE;
+  } */
+
+  /* .nav-link.active {
+    color: #2A49CE;
+  } */
+
+
+  /* .material-icons:hover {
+    color: #b0b0b0;
+  } */
+
+
+</style>
 
 </head>
 </html>

@@ -11,32 +11,71 @@
     @yield('konten') <br>
 
 <footer>
-<nav class="navbar navbar-light bg-light border-top navbar-expand fixed-bottom">
-            <ul class="navbar-nav nav-justified w-100">
-                <li class="nav-item">
-                    <a href="{{url('/landing')}}" class="nav-link">
-                        <img src="\img\Home.png" alt="memek">
+    <div class="navbar d-flex flex-row justify-content-around w-100 px-3 fixed-bottom">
+            <div class="navigation d-flex flex-row justify-content-around w-100">
+                <div class="nav-link text-center w-100">
+                    <a href="{{url('/landing')}}" class="nv">
+
+                        <span class="material-icons" type="button">home</span>
+                        <p class="nav-text-title">Home</p>
+                    </a>
+                </div>
+                <div class="nav-link text-center w-100">
+                    <a href="{{url('/edit')}}" class="nv">
+
+                        <span class="material-icons">receipt</span>
+                        <p class="nav-text-title">Order</p>
+                    </a>
+                </div>
+                <div class="nav-link text-center w-100">
+                    <a href="{{url('/pengaturan')}}" class="nv">
+
+                        <span class="material-icons">import_contacts</span>
+                        <p class="nav-text-title">About</p>
+                    </a>
+                </div>
+                <div class="nav-link text-center w-100">
+                    <a href="{{url('/forgot-password')}}" class="nv active">
+
+                        <span class="material-icons">account_circle</span>
+                        <p class="nav-text-title">Dashboard</p>
+                    </a>
+                </div>
+
+                {{-- <li class="nav-item">
+                    <a href="{{url('/pengaturan')}}" class="nav-link">
+
+                       <span class="material-icons">receipt</span>
+                       <p class="nav-text-title">Order</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
-                       <img src="\img\Receipt.png" alt="">
+                    <a href="{{url('/pengaturan')}}" class="nav-link">
+
+                        <span class="material-icons">import_contacts</span>
+                        <p class="nav-text-title">About</p>
                     </a>
                 </li>
+
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <img src="\img\Import contacts.png" alt="">
+                    <a href="{{url('/pengaturan')}}" class="nav-link">
+
+                        <span class="material-icons">account_circle</span>
+                        <p class="nav-text-title">Dashboard</p>
                     </a>
-                </li>
-               
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <img src="\img\Account circle.png" alt="">
-                    </a>
-                </li>
-            </ul>
-        </nav>
+                </li> --}}
+            </div>
+        </div>
 </footer>
+
+<style>
+    a {
+        color: #b0b0b0;
+    }
+    a.active {
+        color: #2A49CE;
+    }
+</style>
 
 </body>
 </html>
