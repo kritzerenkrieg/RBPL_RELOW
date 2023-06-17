@@ -50,7 +50,9 @@
               </div>
             </div>
             <div class="cta d-grid">
-              <button class="button-wo-icon" type="button">Kirim Bukti</button>
+              <a href="{{url('/landing')}}" class="button-wo-icon text-center">
+              <button class="bton-wo-icon" type="button">Kirim Bukti</button>
+              </a>
               </div>
             </div>
           </div>

@@ -21,7 +21,7 @@
                 <h5 class="card-title">{{ $g->nama_gudang }}</h5>
                 <p class="card-text">{{ $g->lokasi_gudang }}</p>
                 <p class="card-text">Rp. {{ $g->harga_gudang }}</p>
-                <a href="#" class="btn btn-primary">Order</a>
+                <a href="{{url('/payment')}}" class="btn btn-primary">Order</a>
               </div>
             </div>
             @endforeach
