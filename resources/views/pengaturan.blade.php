@@ -51,14 +51,22 @@
 
               </div>
             </div>
-            <div class="cta d-grid">
-              <a href="{{url ('/signin')}}" class="button-wo-icon text-center">
-              <button class="bton-wo-icon" id="saveButton" type="button">Sign Out</button>
-              </a>
+            </form>
+            <div class="form-control d-grid button-wo-icon text-center">
+            <form action="/logout" method="post">
+                  @csrf
+              <button class="bton-wo-icon" type="submit">Sign Out</button>
+                </form>
               <div class="info-text d-flex justify-content-center">
               </div>
-            </form>
-
+           
+    
+<!-- <a href="{{url ('/signin')}}" class="button-wo-icon text-center"> -->
+<!-- <form action="/logout" method="post">
+                  @csrf
+              <button class="button-wo-icon" type="submit">Sign Out</button>
+                </form> -->
+              <!-- </a> -->
 
 
             </div>

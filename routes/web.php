@@ -23,7 +23,7 @@ Route::get('/', function () {
 Route::get('/signup','LoginController@signup');
 Route::post('/signup','LoginController@store');
 
-Route::get('/signin', 'LoginController@signin')->name('signin');
+Route::get('/signin', 'LoginController@signin')->name('signin')->middleware('guest');
 Route::post('/signin', 'LoginController@authenticate');
 Route::post('/logout', 'LoginController@logout');
 
