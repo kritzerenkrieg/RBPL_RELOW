@@ -257,6 +257,10 @@
   cursor: pointer;
   }
 
+  .navigation {
+    gap: 20px;
+  }
+
   .bton-wo-icon {
     border-radius: 4px;
     border-color: transparent;
@@ -278,20 +282,26 @@
 
   .navbar {
     background-color: #ffffff;
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.25);
+    height: 72px;
   }
 
-  .navbar-nav {
-    height: 56px;
+  .nv {
     color: #b0b0b0;
   }
 
-  .nav-item {
-    background-color: #ffffff;
-  }
+  /* .nav-link:active::before {
+    color: #2A49CE;
+  } */
 
-  .nav-link:hover {
+  /* .nav-link.active {
+    color: #2A49CE;
+  } */
+
+
+  /* .material-icons:hover {
     color: #b0b0b0;
-  }
+  } */
 
 
 </style>
