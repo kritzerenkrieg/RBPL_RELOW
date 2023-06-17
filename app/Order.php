@@ -4,8 +4,8 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Gudang extends Model
+class Order extends Model
 {
-    protected $table = 'gudang';
+    protected $table = 'order';
     //
 }

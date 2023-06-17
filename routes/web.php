@@ -48,6 +48,7 @@ Route::get('/dashboard', 'StockController@showStocks')->middleware('auth');
 Route::get('/stock', 'StockController@grafik');
 
 Route::get('/payment', 'PaymentController@Payment');
+Route::get('/payment/{id}' , 'PaymentController@index');
 Route::get('/co', 'PaymentController@checkout');
 
 Route::get('/landing', 'LandingController@landing')->middleware('auth');

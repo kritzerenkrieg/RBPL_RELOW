@@ -14,7 +14,7 @@
                 <div class="home-card-section d-flex flex-column gap-0 shadow p-3 mb-5 bg-body rounded">
                     <div class="card-text">
                         <div class="card-title text-start d-flex flex-column">
-                            <h2 class="main-title fw-semibold">BARNhouse Serbaguna Surabaya</h2>
+                            <h2 class="main-title fw-semibold">{{$gudang}}</h2>
                         </div>
                     </div>
                     <div class="card-price d-flex flex-column">
