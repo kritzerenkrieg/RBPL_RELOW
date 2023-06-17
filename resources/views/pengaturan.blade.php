@@ -22,7 +22,7 @@
               <div class="form-sign-up">
                 <div class="form-1 mb-3">
                   <label for="exampleInputPassword1" class="form-label">Nama</label>
-                  <input value= "{{auth()->user()->nama}}" type="text" class="form-control" id="exampleInputPassword1" disabled />
+                  <input value="{{auth()->user()->nama}}" type="text" class="form-control" id="exampleInputPassword1" disabled />
                   <a href="{{url ('/edit')}}" class="edit-link">Edit</a>
                 </div>
 
@@ -40,33 +40,23 @@
                   <input value="0{{auth()->user()->nohp}}" type="text" class="form-control" id="exampleInputPassword1" disabled />
                   <a href="{{url ('/edit')}}" class="edit-link">Edit</a>
                 </div>
-
-
-                <div class="form-4 mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Kata Sandi</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" disabled />
-                  <a href="{{url ('/edit')}}" class="edit-link">Edit</a>
-                </div>
-
-
               </div>
             </div>
             </form>
             <div class="form-control d-grid button-wo-icon text-center">
-            <form action="/logout" method="post">
-                  @csrf
-              <button class="bton-wo-icon" type="submit">Sign Out</button>
+                <form action="/logout" method="post">
+                    @csrf
+                <button class="bton-wo-icon w-100" type="submit">Sign Out</button>
                 </form>
-              <div class="info-text d-flex justify-content-center">
-              </div>
-           
-    
-<!-- <a href="{{url ('/signin')}}" class="button-wo-icon text-center"> -->
+            </div>
+
+
+{{-- <!-- <a href="{{url ('/signin')}}" class="button-wo-icon text-center"> -->
 <!-- <form action="/logout" method="post">
                   @csrf
               <button class="button-wo-icon" type="submit">Sign Out</button>
                 </form> -->
-              <!-- </a> -->
+              <!-- </a> --> --}}
 
 
             </div>

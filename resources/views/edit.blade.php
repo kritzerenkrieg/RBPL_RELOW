@@ -39,22 +39,22 @@
                 </div>
 
 
-                <div class="form-4 mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Kata Sandi</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" />
-                </div>
-
-
               </div>
             </div>
-            <div class="cta d-grid">
+            {{-- <div class="cta d-grid">
                 <a href="{{url ('/pengaturan')}}" class="button-wo-icon text-center">
                     <button class="bton-wo-icon" id="saveButton" type="button">Simpan</button>
                 </a>
                 <div class="info-text d-flex justify-content-center">
                 </div>
-              </div>
+              </div> --}}
             </form>
+            <div class="form-control d-grid button-wo-icon text-center">
+                <form action="/pengaturan" method="post">
+                    @csrf
+                <button class="bton-wo-icon w-100" type="submit">Simpan</button>
+                </form>
+            </div>
 
 
 
