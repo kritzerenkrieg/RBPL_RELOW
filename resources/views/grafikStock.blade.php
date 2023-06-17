@@ -3,7 +3,7 @@
 @section('konten')  
 <title> Dashboard </title>
 <body class="stock">
-<div class="container-md" style="font-family:poppins ">
+<div class="container-md" style="font-family:poppins;">
     <div class="container-1 bg-white d-flex flex-column px-3">
         <a href="{{url ('/dashboard')}}" class="button-w-icon d-flex">
           <span class="material-symbols-outlined" type="button">arrow_back_ios</span>
@@ -50,7 +50,7 @@
         <p class="mt-3 mb-0 fw-semibold"  style="font-size: 13px;" > 
             Laporan statistik
         </p>
-        <div class="row mt-1 mb-3">
+        <div class="row mt-1 mb-5 ">
             <div class="col bg-white rounded-5" style="height:150px; width:auto;">
             <p class="fw-medium mt-4 mx-4 mb-0" style="font-size: 11px; color:#545454;">
             <img src="{{ asset('img/info.png') }}" alt="" style="height: 15px; width: 15px;" class="me-2">
@@ -62,14 +62,14 @@
             </div>
 
         </div>
-        <form action="/logout" method="post">
+        <!-- <form action="/logout" method="post">
     @csrf
     <button type="submit" class="btn btn-danger ">
         LOGOUT
     </button>
     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime debitis aperiam veritatis dolores possimus sunt, dicta perferendis voluptate similique odit at? Dignissimos provident exercitationem repellat minima est molestias enim suscipit.</p>
     
-    </div>
+    </div> -->
     
 </form>
 </body>
