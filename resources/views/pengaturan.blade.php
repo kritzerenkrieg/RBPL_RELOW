@@ -42,11 +42,11 @@
                 </div>
 
 
-                <div class="form-4 mb-3">
+                <!-- <div class="form-4 mb-3">
                   <label for="exampleInputPassword1" class="form-label">Kata Sandi</label>
                   <input type="password" class="form-control" id="exampleInputPassword1" disabled />
                   <a href="{{url ('/edit')}}" class="edit-link">Edit</a>
-                </div>
+                </div> -->
 
 
               </div>
