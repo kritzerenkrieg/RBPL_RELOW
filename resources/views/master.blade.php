@@ -35,7 +35,7 @@
                     </a>
                 </div>
                 <div class="nav-link text-center w-100">
-                    <a href="{{url('/forgot-password')}}" class="nv active">
+                    <a href="{{url('/dashboard')}}" class="nv active">
 
                         <span class="material-icons">account_circle</span>
                         <p class="nav-text-title">Dashboard</p>
