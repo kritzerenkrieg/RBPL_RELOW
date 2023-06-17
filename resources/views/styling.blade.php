@@ -140,6 +140,12 @@
     gap: 8px;
   }
 
+  .material-symbols-outlined {
+    color: #000;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #000;
+  }
+
   .button-wo-icon {
     border-radius: 4px;
     border-color: transparent;

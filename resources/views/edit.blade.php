@@ -40,6 +40,7 @@
                   <input value="0{{auth()->user()->nohp}}" type="text" class="form-control" id="nohp" name="nohp" />
                 </div>
 
+<<<<<<< HEAD
 <!-- 
                 <div class="form-4 mb-3">
                   <label for="exampleInputPassword1" class="form-label">Kata Sandi</label>
@@ -53,10 +54,25 @@
                 <!-- <a href="{{url ('/pengaturan')}}" class="button-wo-icon text-center"> -->
                     <button class="button-wo-icon" id="saveButton" type="submit ">Simpan</button>
                 <!-- </a> -->
+=======
+
+              </div>
+            </div>
+            {{-- <div class="cta d-grid">
+                <a href="{{url ('/pengaturan')}}" class="button-wo-icon text-center">
+                    <button class="bton-wo-icon" id="saveButton" type="button">Simpan</button>
+                </a>
+>>>>>>> 4586bc503d8caa91f18020611294af268b359a82
                 <div class="info-text d-flex justify-content-center">
                 </div>
-              </div>
+              </div> --}}
             </form>
+            <div class="form-control d-grid button-wo-icon text-center">
+                <form action="/pengaturan" method="post">
+                    @csrf
+                <button class="bton-wo-icon w-100" type="submit">Simpan</button>
+                </form>
+            </div>
 
 
 
