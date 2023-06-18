@@ -296,6 +296,53 @@
     color: #b0b0b0;
   }
 
+  .stok-dash {
+    margin-top: 0%;
+    padding-top: 32px;
+    padding-bottom: 24px;
+    /* padding-left: 16px;
+    padding-right: 16px; */
+  }
+
+  .cont-1-dash {
+    margin-top: 0%;
+    /* padding-left: 8px;
+    padding-right: 8px; */
+    /* align-content: center; */
+    align-items: center;
+  }
+
+  .profile-text {
+    margin-top: 0%;
+  }
+
+  .owner-name {
+    margin-top: 0%;
+    margin-bottom: 0%;
+  }
+
+  .owner-type {
+    margin-top: 0%;
+    margin-bottom: 0%;
+  }
+
+  .button-w-place {
+    padding-right: 8px;
+  }
+
+  .button-w-place .material-icons {
+    padding: 20%;
+    border-radius: 100%;
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.10);
+    background-color: #ffffff;
+  }
+
+
+
+  /* .container-1-dash {
+    align-items: center;
+  } */
+
   .read-more-content {
     max-height: 0;
     overflow: hidden;
