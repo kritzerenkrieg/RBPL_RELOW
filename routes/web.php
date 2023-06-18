@@ -55,6 +55,7 @@ Route::get('/co', 'PaymentController@checkout');
 
 Route::get('/landing', 'LandingController@landing')->middleware('auth');
 Route::get('/index','IndexController@index');
+Route::get('/index/cari','IndexController@cari');
 Route::get('/about', 'LandingController@about');
 
 Route::get('/pengaturan', 'pengaturanController@pengaturan')->name('user_settings');

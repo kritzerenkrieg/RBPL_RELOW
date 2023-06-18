@@ -13,9 +13,9 @@
             <h2 class="main-title text-center">Gudang menarik untuk bisnismu</h2>
             <p class="sub-title text-center">Ada beragam jenis gudang yang cocok buat kamu nih! Yuk temukan selera hatimu sekarang!</p>
             
-            <div class="card-container d-flex flex-wrap">
+            <div class="card-container d-flex flex-wrap justify-content-center align-items-center mb-4">
             @foreach($gudang as $g)
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 18rem; font-family: Poppins;">
               <img src="\images\Information.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">{{ $g->nama_gudang }}</h5>

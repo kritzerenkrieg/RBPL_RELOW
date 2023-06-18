@@ -5,7 +5,7 @@ use App\Order;
 use App\Gudang;
 use App\Payment;
 use Illuminate\Http\Request;
-
+use App\Payment;
 class PaymentController extends Controller
 {
 
@@ -26,9 +26,13 @@ class PaymentController extends Controller
 	public function payment($id)
     {
         // Retrieve the payment details based on the $id
+<<<<<<< Updated upstream
        // $payment = Payment::findorFail($id);
 		$payment = Payment::where('id_gudang', $id)->first();
 
+=======
+		$payment = Payment::where('id_gudang', $id)->first();
+>>>>>>> Stashed changes
 
         // Perform the payment processing logic here
         // For example, you can create a new payment record in the database,
