@@ -1,6 +1,6 @@
 @extends ('master')
 
-@section('konten')
+@section('konten')  
 <title> Dashboard </title>
 <body class="stock">
 <div class="container-md" style="font-family:poppins ">
@@ -9,18 +9,18 @@
           <div class="cont-1-dash d-flex flex-row">
             <div class="profile-text text-left d-flex flex-column w-100">
               <p class="owner-name fw-bold" style="font-size: 19px;">
-                   {{auth()->user()->nama}}
-               </p>
+        {{auth()->user()->nama}}
+    </p>
                <p class="owner-type" style="color: #8a8a8a; font-size: 11px">
-                   Pengguna umum
-               </p>
-            </div>
+        Pengguna umum
+    </p>
+</div>
             <a href="{{url('/pengaturan')}}" class="button-w-place">
             <span class="material-icons" type="button" style="color: #545454">
                   settings
             </span>
             </a>
-          </div>
+</div>
         </div>
     </div>
 
@@ -35,7 +35,7 @@
         </div>
         <div class="col-6">
             <a href="{{url('/stock')}}">
-                <p class="mt-3 fw-semibold text-end" style="font-size: 13px; color: #2A49CE;">
+                <p class="mt-3 fw-semibold text-end" style="font-size: 13px; color: #2A49CE;"> 
                     Lihat semua
                 </p>
             </a>
@@ -47,11 +47,11 @@
                 <img src="{{ asset('img/stok.png') }}" alt="" style="height: 15px; width: 15px;" class="me-2"> Stok tersedia
                 </p>
                 <p class="fw-semibold text-left mt-3 mx-4" style="font-size: 28px; color:#333333;">
-                000{{-- {{ $totalStok }} --}}
+                 {{ $totalStok }} 
                 </p>
                 <p class="fw-medium text-left mt-4 mx-4" style="font-size: 9px; color:#506AD7;">
 
-                    d F y{{-- Updated {{ \Carbon\Carbon::parse($tanggal_update[0])->format('d F Y') }} --}}
+                     Updated {{ \Carbon\Carbon::parse($tanggal_update[0])->format('d F Y') }} 
 
                 </p>
             </div>
@@ -61,11 +61,11 @@
                     Gudang Sewa
                 </p>
                 <p class="fw-semibold text-start mt-3 mx-4" style="font-size: 28px; color:#333333;">
-                000{{-- {{ $gudangCount }} --}}
+                 {{ $gudangCount }} 
                 </p>
                 <p class="fw-medium text-start mt-4 mx-4" style="font-size: 9px; color:#506AD7;">
 
-                    d F y{{-- Updated {{ \Carbon\Carbon::parse($tanggal_update[0])->format('d F Y') }} --}}
+                     Updated {{ \Carbon\Carbon::parse($tanggal_update[0])->format('d F Y') }} 
 
                 </p>
             </div>
