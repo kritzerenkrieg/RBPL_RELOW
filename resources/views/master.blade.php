@@ -21,7 +21,7 @@
                     </a>
                 </div>
                 <div class="nav-link text-center w-100">
-                    <a href="" class="nv">
+                    <a href="{{url('/index')}}" class="nv">
 
                         <span class="material-icons">receipt</span>
                         <p class="nav-text-title">Order</p>

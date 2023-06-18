@@ -29,8 +29,7 @@
 
             <script src="{{ asset('js/app.js') }}"></script>
             <div class="zrayacenter">
-            <button class="btn zrayastyle">
-            Lihat Semua Gudang
+            <button class="btn zrayastyle" onclick="window.location.href='{{url('/index')}}'">Lihat Semua Gudang</button>
             </button>
             </div>
             
