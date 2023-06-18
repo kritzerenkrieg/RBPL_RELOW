@@ -3,11 +3,7 @@
 
 <title>Settings - Edit</title>
 
-@if(session('success'))
-    <div class="alert alert-success">
-        {{ session('success') }}
-    </div>
-@endif
+
 
   <body>
     <div class="sign-up-user">
