@@ -21,7 +21,7 @@
     @endif
     <div class="sign-up-user">
       <div class="container-1 d-flex flex-column px-3 gap-3">
-        <a href="{{url ('/pengaturan')}}" class="button-w-icon d-flex">
+        <a href="{{url ('/signin')}}" class="button-w-icon d-flex">
             <span class="material-symbols-outlined" type="button">arrow_back_ios</span>
             <p class="button-text" type="button">Kembali</p>
         </a>

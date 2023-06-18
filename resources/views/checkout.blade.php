@@ -50,8 +50,8 @@
               </div>
             </div>
             <div class="cta d-grid">
-              <a href="{{url('/landing')}}" class="button-wo-icon text-center">
-              <button class="bton-wo-icon" type="button">Kirim Bukti</button>
+              <a href="{{route('invoice.req', ['id' => $id])}}" class="button-wo-icon text-center">
+              <button class="bton-wo-icon" type="submit">Kirim Bukti</button>
               </a>
               </div>
             </div>

@@ -52,6 +52,7 @@ Route::get('/payment', 'PaymentController@Payment');
 Route::get('/payment/{id}', [PaymentController::class, 'payment'])->name('payment.req');
 Route::get('/co/{id}', [PaymentController::class, 'checkout'])->name('checkout.req');
 Route::get('/co', 'PaymentController@checkout');
+Route::get('/co/invoice/{id}', 'PaymentController@invoice')->name('invoice.req');
 
 Route::get('/landing', 'LandingController@landing')->middleware('auth');
 Route::get('/index','IndexController@index');

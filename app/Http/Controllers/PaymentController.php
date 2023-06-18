@@ -16,6 +16,10 @@ class PaymentController extends Controller
 		$payment = Payment::where('id_gudang', $id)->first();
 		return view('checkout', compact('payment', 'id'));
 	}
+	public function invoice($id){
+		$payment = Payment::where('id_gudang', $id)->first();
+		return view('invoice', compact('payment', 'id'));
+	}
 
 	// public function index($id){
 
