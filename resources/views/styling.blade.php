@@ -296,6 +296,77 @@
     color: #b0b0b0;
   }
 
+  .about-wrp {
+    gap: 100px;
+  }
+
+  .about-header-text {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .about-footer {
+    border-top: 8px solid #EAEDFA;
+    border-bottom: 80px solid #fff;
+  }
+
+  .about-footer-text {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .office-img-footer {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .about-hubungi {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .about-content {
+    border-top: 8px solid #EAEDFA;
+  }
+
+  .about-content-text {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .read-more-content {
+    padding-left: 16px;
+    padding-right: 16px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .read-more-content:target {
+    max-height: 1000px;
+    transition: max-height 0.3s ease;
+  }
+
+  .read-more-button {
+    cursor: pointer;
+    color: #2a49ce;
+    display: block;
+  }
+
+
+  .tentang-kami {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+  }
+
   .stok-dash {
     margin-top: 0%;
     padding-top: 32px;
@@ -343,22 +414,6 @@
     align-items: center;
   } */
 
-  .read-more-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-}
-
-.read-more-content:target {
-    max-height: 1000px; /* Adjust the value to fit your content */
-    transition: max-height 0.3s ease;
-}
-
-.read-more-button {
-    cursor: pointer;
-    color: blue;
-    display: block;
-}
 
 
 

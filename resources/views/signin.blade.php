@@ -60,11 +60,11 @@
             <input
              type="password"
              class="form-control"
-             name="password" 
+             name="password"
              id="password"
-             required 
+             required
            />
-           
+
           <!--  <div class="input-group-append">
              <span class="input-group-text bg-white">
                 <button class="btn btn-outline-secondary bg-white border-0" type="button" onclick="showhide();">
@@ -72,7 +72,7 @@
                   <i class="fas fa-eye-slash" id="show_eye"></i>
                 </button>
               </span>
-            </div> 
+            </div>
           </div>-->
         </div>
         <div class="text-end">
@@ -81,9 +81,9 @@
            </a>
         </div>
         <div class="text-center mt-5 d-grid gap-2">
-          <button type="submit" class="btn btn-primary" style="font-size: 13px">
-            Sign In
-          </button>
+            <div class="cta d-grid">
+                <button class="button-wo-icon" type="submit">Sign Up</button>
+            </div>
       </form>
         </div>
         <div class="text-center mt-2" style="font-size: 13px">
